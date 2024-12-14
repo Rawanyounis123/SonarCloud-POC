@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "e2535a8c-d144-4350-b1ef-2a2053eaea83",
+		"name": "SonarCloud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31684146"
+	},
+	"item": [
+		{
+			"name": "Summary Metrics",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "13f15d35bcaf71b2a8444e7c82bf2745705ac712",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sonarcloud.io/api/measures/search?projectKeys=Rawanyounis123_Assignment4%2Cbrave_brave-core&metricKeys=alert_status%2Cbugs%2Creliability_rating%2Cvulnerabilities%2Csecurity_rating%2Csecurity_hotspots_reviewed%2Csecurity_review_rating%2Ccode_smells%2Csqale_rating%2Cduplicated_lines_density%2Ccoverage%2Cncloc%2Cncloc_language_distribution%2Csecurity_issues%2Creliability_issues%2Cmaintainability_issues",
+					"protocol": "https",
+					"host": [
+						"sonarcloud",
+						"io"
+					],
+					"path": [
+						"api",
+						"measures",
+						"search"
+					],
+					"query": [
+						{
+							"key": "projectKeys",
+							"value": "Rawanyounis123_Assignment4%2Cbrave_brave-core"
+						},
+						{
+							"key": "f",
+							"value": "analysisDate%2CleakPeriodDate%2Corganizations",
+							"disabled": true
+						},
+						{
+							"key": "filter",
+							"value": "isFavorite",
+							"disabled": true
+						},
+						{
+							"key": "metricKeys",
+							"value": "alert_status%2Cbugs%2Creliability_rating%2Cvulnerabilities%2Csecurity_rating%2Csecurity_hotspots_reviewed%2Csecurity_review_rating%2Ccode_smells%2Csqale_rating%2Cduplicated_lines_density%2Ccoverage%2Cncloc%2Cncloc_language_distribution%2Csecurity_issues%2Creliability_issues%2Cmaintainability_issues"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://sonarcloud.io/api/measures/search?projectKeys=Rawanyounis123_Assignment4%2Cbrave_brave-core&metricKeys=alert_status%2Cbugs%2Creliability_rating%2Cvulnerabilities%2Csecurity_rating%2Csecurity_hotspots_reviewed%2Csecurity_review_rating%2Ccode_smells",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sonarcloud.io/api/measures/search?projectKeys=Rawanyounis123_Assignment4%2Cbrave_brave-core&metricKeys=alert_status%2Cbugs%2Creliability_rating%2Cvulnerabilities%2Csecurity_rating%2Csecurity_hotspots_reviewed%2Csecurity_review_rating%2Ccode_smells%2Csqale_rating%2Cduplicated_lines_density%2Ccoverage%2Cncloc%2Cncloc_language_distribution%2Csecurity_issues%2Creliability_issues%2Cmaintainability_issues",
+							"protocol": "https",
+							"host": [
+								"sonarcloud",
+								"io"
+							],
+							"path": [
+								"api",
+								"measures",
+								"search"
+							],
+							"query": [
+								{
+									"key": "projectKeys",
+									"value": "Rawanyounis123_Assignment4%2Cbrave_brave-core"
+								},
+								{
+									"key": "f",
+									"value": "analysisDate%2CleakPeriodDate%2Corganizations",
+									"disabled": true
+								},
+								{
+									"key": "filter",
+									"value": "isFavorite",
+									"disabled": true
+								},
+								{
+									"key": "metricKeys",
+									"value": "alert_status%2Cbugs%2Creliability_rating%2Cvulnerabilities%2Csecurity_rating%2Csecurity_hotspots_reviewed%2Csecurity_review_rating%2Ccode_smells%2Csqale_rating%2Cduplicated_lines_density%2Ccoverage%2Cncloc%2Cncloc_language_distribution%2Csecurity_issues%2Creliability_issues%2Cmaintainability_issues"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 14 Dec 2024 11:53:17 GMT"
+						},
+						{
+							"key": "vary",
+							"value": "accept-encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Content-Security-Policy-Report-Only",
+							"value": "default-src 'self';script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.google-analytics.com https://www.googletagmanager.com https://tagmanager.google.com https://static.cdn.prismic.io https://bitbucket.org/atlassian-connect/all.js https://dev.azure.com js.braintreegateway.com assets.braintreegateway.com www.paypalobjects.com c.paypal.com https://static.userback.io;style-src 'self' 'unsafe-inline' https://tagmanager.google.com https://fonts.googleapis.com https://static.cdn.prismic.io https://static.userback.io;img-src 'self' https: assets.braintreegateway.com checkout.paypal.com data:;connect-src 'self' https://sonarcloud.io *.sc-dev.io https://*.google-analytics.com https://static.cdn.prismic.io https://*.sentry.io https://*.ingest.sentry.io https://sonarsource.cdn.prismic.io https://static.sonarcloud.io wss://notifications.sonarcloud.io https://d301sr5gafysq2.cloudfront.net api.sandbox.braintreegateway.com api.braintreegateway.com client-analytics.sandbox.braintreegateway.com client-analytics.braintreegateway.com *.braintree-api.com https://api.userback.io https://secure.gravatar.com https://api.bitbucket.org http://localhost:64120 http://localhost:64121 http://localhost:64122 http://localhost:64123 http://localhost:64124 http://localhost:64125 http://localhost:64126 http://localhost:64127 http://localhost:64128 http://localhost:64129 http://localhost:64130;object-src 'none';media-src 'none';child-src 'self' assets.braintreegateway.com c.paypal.com;frame-src 'self' assets.braintreegateway.com c.paypal.com *.cardinalcommerce.com https://eu.3ds.acssecure.com https://*.americanexpress.com https://acs.capitalone.com;font-src 'self' https://fonts.gstatic.com https://static.userback.io/fonts;"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, must-revalidate"
+						},
+						{
+							"key": "Sonar-Version",
+							"value": "10.14.0.2599"
+						},
+						{
+							"key": "X-Sonar-Server-Time",
+							"value": "1734177197945"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 cddac1826d47092cbe35e94de4058786.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "FCO50-P3"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "QsKJRaugrRA37FpmUczd2GhlGdzWv57j-hrpklTM-csMIUdBbSGq-w=="
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"measures\": [\n        {\n            \"metric\": \"alert_status\",\n            \"value\": \"ERROR\",\n            \"component\": \"brave_brave-core\"\n        },\n        {\n            \"metric\": \"bugs\",\n            \"value\": \"0\",\n            \"component\": \"Rawanyounis123_Assignment4\",\n            \"bestValue\": true\n        },\n        {\n            \"metric\": \"bugs\",\n            \"value\": \"122\",\n            \"component\": \"brave_brave-core\",\n            \"bestValue\": false\n        },\n        {\n            \"metric\": \"code_smells\",\n            \"value\": \"36\",\n            \"component\": \"Rawanyounis123_Assignment4\",\n            \"bestValue\": false\n        },\n        {\n            \"metric\": \"code_smells\",\n            \"value\": \"5187\",\n            \"component\": \"brave_brave-core\",\n            \"bestValue\": false\n        },\n        {\n            \"metric\": \"duplicated_lines_density\",\n            \"value\": \"0.0\",\n            \"component\": \"Rawanyounis123_Assignment4\",\n            \"bestValue\": true\n        },\n        {\n            \"metric\": \"duplicated_lines_density\",\n            \"value\": \"2.1\",\n            \"component\": \"brave_brave-core\",\n            \"bestValue\": false\n        },\n        {\n            \"metric\": \"maintainability_issues\",\n            \"value\": \"{\\\"total\\\":36,\\\"HIGH\\\":7,\\\"MEDIUM\\\":26,\\\"LOW\\\":3,\\\"INFO\\\":0,\\\"BLOCKER\\\":0}\",\n            \"component\": \"Rawanyounis123_Assignment4\"\n        },\n        {\n            \"metric\": \"maintainability_issues\",\n            \"value\": \"{\\\"total\\\":5165,\\\"HIGH\\\":1113,\\\"MEDIUM\\\":2621,\\\"LOW\\\":1414,\\\"INFO\\\":0,\\\"BLOCKER\\\":17}\",\n            \"component\": \"brave_brave-core\"\n        },\n        {\n            \"metric\": \"ncloc\",\n            \"value\": \"310\",\n            \"component\": \"Rawanyounis123_Assignment4\"\n        },\n        {\n            \"metric\": \"ncloc\",\n            \"value\": \"468726\",\n            \"component\": \"brave_brave-core\"\n        },\n        {\n            \"metric\": \"ncloc_language_distribution\",\n            \"value\": \"c=16;cpp=294\",\n            \"component\": \"Rawanyounis123_Assignment4\"\n        },\n        {\n            \"metric\": \"ncloc_language_distribution\",\n            \"value\": \"css=6369;js=9193;plsql=8209;py=13575;swift=192364;ts=196174;web=6741;xml=36101\",\n            \"component\": \"brave_brave-core\"\n        },\n        {\n            \"metric\": \"reliability_issues\",\n            \"value\": \"{\\\"total\\\":0,\\\"HIGH\\\":0,\\\"MEDIUM\\\":0,\\\"LOW\\\":0,\\\"INFO\\\":0,\\\"BLOCKER\\\":0}\",\n            \"component\": \"Rawanyounis123_Assignment4\"\n        },\n        {\n            \"metric\": \"reliability_issues\",\n            \"value\": \"{\\\"total\\\":258,\\\"HIGH\\\":7,\\\"MEDIUM\\\":60,\\\"LOW\\\":191,\\\"INFO\\\":0,\\\"BLOCKER\\\":0}\",\n            \"component\": \"brave_brave-core\"\n        },\n        {\n            \"metric\": \"reliability_rating\",\n            \"value\": \"1.0\",\n            \"component\": \"Rawanyounis123_Assignment4\",\n            \"bestValue\": true\n        },\n        {\n            \"metric\": \"reliability_rating\",\n            \"value\": \"4.0\",\n            \"component\": \"brave_brave-core\",\n            \"bestValue\": false\n        },\n        {\n            \"metric\": \"security_hotspots_reviewed\",\n            \"value\": \"100.0\",\n            \"component\": \"Rawanyounis123_Assignment4\",\n            \"bestValue\": true\n        },\n        {\n            \"metric\": \"security_hotspots_reviewed\",\n            \"value\": \"61.1\",\n            \"component\": \"brave_brave-core\",\n            \"bestValue\": false\n        },\n        {\n            \"metric\": \"security_issues\",\n            \"value\": \"{\\\"total\\\":0,\\\"HIGH\\\":0,\\\"MEDIUM\\\":0,\\\"LOW\\\":0,\\\"INFO\\\":0,\\\"BLOCKER\\\":0}\",\n            \"component\": \"Rawanyounis123_Assignment4\"\n        },\n        {\n            \"metric\": \"security_issues\",\n            \"value\": \"{\\\"total\\\":0,\\\"HIGH\\\":0,\\\"MEDIUM\\\":0,\\\"LOW\\\":0,\\\"INFO\\\":0,\\\"BLOCKER\\\":0}\",\n            \"component\": \"brave_brave-core\"\n        },\n        {\n            \"metric\": \"security_rating\",\n            \"value\": \"1.0\",\n            \"component\": \"Rawanyounis123_Assignment4\",\n            \"bestValue\": true\n        },\n        {\n            \"metric\": \"security_rating\",\n            \"value\": \"1.0\",\n            \"component\": \"brave_brave-core\",\n            \"bestValue\": true\n        },\n        {\n            \"metric\": \"security_review_rating\",\n            \"value\": \"1.0\",\n            \"component\": \"Rawanyounis123_Assignment4\",\n            \"bestValue\": true\n        },\n        {\n            \"metric\": \"security_review_rating\",\n            \"value\": \"3.0\",\n            \"component\": \"brave_brave-core\",\n            \"bestValue\": false\n        },\n        {\n            \"metric\": \"sqale_rating\",\n            \"value\": \"1.0\",\n            \"component\": \"Rawanyounis123_Assignment4\",\n            \"bestValue\": true\n        },\n        {\n            \"metric\": \"sqale_rating\",\n            \"value\": \"1.0\",\n            \"component\": \"brave_brave-core\",\n            \"bestValue\": true\n        },\n        {\n            \"metric\": \"vulnerabilities\",\n            \"value\": \"0\",\n            \"component\": \"Rawanyounis123_Assignment4\",\n            \"bestValue\": true\n        },\n        {\n            \"metric\": \"vulnerabilities\",\n            \"value\": \"0\",\n            \"component\": \"brave_brave-core\",\n            \"bestValue\": true\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
